@@ -1,0 +1,33 @@
+﻿< !DOCTYPE html >
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Collective Cell Simulator</title>
+            <style>
+                body {font - family: Arial, sans-serif; background-color: #f0f0f0; }
+                .container {max - width: 900px; margin: 20px auto; background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+                canvas {border: 1px solid #ccc; display: block; margin: 10px 0; }
+                .controls button {padding: 10px 15px; margin-right: 10px; font-size: 16px; cursor: pointer; }
+                #log {margin - top: 15px; padding: 10px; border: 1px solid #eee; height: 100px; overflow-y: scroll; background-color: #fafafa;}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>集體進化：細胞模擬器</h1>
+                <p>當前狀態：<strong id="mutationType">Neutral</strong> | 能量：<span id="healthValue">0</span></p>
+
+                <canvas id="cellCanvas" width="800" height="500"></canvas>
+
+                <div class="controls">
+                    <button id="absorbBtn">吸收能量 (Absorb)</button>
+                    <button id="emitBtn">排放廢物 (Emit)</button>
+                </div>
+
+                <h3>即時訊息紀錄</h3>
+                <div id="log"></div>
+            </div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/8.0.0/signalr.min.js"></script>
+            <script src="game.js"></script>
+        </body>
+    </html>

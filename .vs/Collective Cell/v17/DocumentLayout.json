@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "D:\\Collective Cell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\services\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\services\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\services\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\services\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\services\\cellstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\services\\cellstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\hubs\\cellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\hubs\\cellhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,15 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cell.cs",
-              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Models\\Cell.cs",
-              "RelativeDocumentMoniker": "Collective Cell\\Models\\Cell.cs",
-              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Models\\Cell.cs",
-              "RelativeToolTip": "Collective Cell\\Models\\Cell.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "game.js",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\wwwroot\\js\\game.js",
+              "RelativeDocumentMoniker": "Collective Cell\\wwwroot\\js\\game.js",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\wwwroot\\js\\game.js",
+              "RelativeToolTip": "Collective Cell\\wwwroot\\js\\game.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-12-23T01:55:31.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "index.html",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "Collective Cell\\wwwroot\\index.html",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\wwwroot\\index.html",
+              "RelativeToolTip": "Collective Cell\\wwwroot\\index.html",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-12-23T01:55:06.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CellHub.cs",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Hubs\\CellHub.cs",
+              "RelativeDocumentMoniker": "Collective Cell\\Hubs\\CellHub.cs",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Hubs\\CellHub.cs",
+              "RelativeToolTip": "Collective Cell\\Hubs\\CellHub.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAIwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T01:17:24.752Z",
+              "WhenOpened": "2025-12-23T01:47:05.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameEngine.cs",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Services\\GameEngine.cs",
+              "RelativeDocumentMoniker": "Collective Cell\\Services\\GameEngine.cs",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Services\\GameEngine.cs",
+              "RelativeToolTip": "Collective Cell\\Services\\GameEngine.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T01:45:45.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Resource.cs",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Services\\Resource.cs",
+              "RelativeDocumentMoniker": "Collective Cell\\Services\\Resource.cs",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Services\\Resource.cs",
+              "RelativeToolTip": "Collective Cell\\Services\\Resource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T01:42:48.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CellState.cs",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Services\\CellState.cs",
+              "RelativeDocumentMoniker": "Collective Cell\\Services\\CellState.cs",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Services\\CellState.cs",
+              "RelativeToolTip": "Collective Cell\\Services\\CellState.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwF0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T01:42:22.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Program.cs",
+              "RelativeDocumentMoniker": "Collective Cell\\Program.cs",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Program.cs",
+              "RelativeToolTip": "Collective Cell\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T01:37:23.242Z",
               "EditorCaption": ""
             }
           ]
