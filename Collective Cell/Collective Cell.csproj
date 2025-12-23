@@ -7,8 +7,6 @@
     <RootNamespace>Collective_Cell</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.SignalR.Protocols.MessagePack" Version="10.0.1" />
+<ItemGroup>
   </ItemGroup>
-
 </Project>

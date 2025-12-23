@@ -1,6 +1,7 @@
 ﻿// Hubs/CellHub.cs
 using Collective_Cell.Services;
 using Microsoft.AspNetCore.SignalR;
+using static Collective_Cell.Services.CellState;
 
 namespace Collective_Cell.Hubs
 {
@@ -34,6 +35,34 @@ namespace Collective_Cell.Hubs
             // 剛連線時，先向該客戶端發送一次當前細胞的完整狀態
             await Clients.Caller.SendAsync("ReceiveCellStateUpdate", _cellState);
             await base.OnConnectedAsync();
+        }
+
+        public void ContributeMovement(string direction)
+        {
+            Vector2 movementVector = new Vector2();
+            double moveSpeed = 20.0; // 每個按鈕貢獻的移動量
+
+            // 根據玩家點擊的方向，計算向量
+            switch (direction.ToLower())
+            {
+                case "up":
+                    movementVector = new Vector2 { DX = 0, DY = -moveSpeed };
+                    break;
+                case "down":
+                    movementVector = new Vector2 { DX = 0, DY = moveSpeed };
+                    break;
+                case "left":
+                    movementVector = new Vector2 { DX = -moveSpeed, DY = 0 };
+                    break;
+                case "right":
+                    movementVector = new Vector2 { DX = moveSpeed, DY = 0 };
+                    break;
+                default:
+                    return; // 忽略無效輸入
+            }
+
+            // 將向量加入佇列
+            _cellState.PendingMovements.Enqueue(movementVector);
         }
     }
 }

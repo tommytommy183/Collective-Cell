@@ -1,4 +1,5 @@
 ﻿using System.Collections.Concurrent;
+using System.Numerics;
 namespace Collective_Cell.Services
 {
     // 代表地圖上的資源點
@@ -17,10 +18,12 @@ namespace Collective_Cell.Services
         public double Size { get; private set; } = 50.0;
         public string CurrentMutationType { get; private set; } = "Neutral";
         public DateTime LastUpdate { get; private set; } = DateTime.UtcNow;
+        public double X { get; set; } = 400; // 預設中心 X 座標 (假設畫布寬度為 800)
+        public double Y { get; set; } = 300; // 預設中心 Y 座標 (假設畫布高度為 600)
 
         // 使用 ConcurrentQueue 收集所有玩家的即時輸入，等待 GameEngine 處理
         public ConcurrentQueue<Input> PendingInputs { get; } = new();
-
+        public ConcurrentQueue<Vector2> PendingMovements { get; } = new();
         // 地圖上的資源清單
         public List<Resource> Resources { get; private set; } = new();
 
@@ -31,6 +34,12 @@ namespace Collective_Cell.Services
             // 初始生成一些資源
             Resources.Add(new Resource(100, 100, 50));
             Resources.Add(new Resource(300, 400, 80));
+        }
+
+        public struct Vector2
+        {
+            public double DX { get; set; } // X 方向的變化
+            public double DY { get; set; } // Y 方向的變化
         }
 
         // 供 GameEngine 呼叫，執行遊戲邏輯更新
@@ -46,6 +55,9 @@ namespace Collective_Cell.Services
 
                 // 3. 檢查突變
                 CheckForMutation();
+
+                // 4. 移動
+                ProcessPendingMovements();
 
                 // 確保 Health 不會小於 0
                 Health = Math.Max(0, Health);
@@ -88,6 +100,42 @@ namespace Collective_Cell.Services
             else if (Health < 500 && CurrentMutationType != "Struggling")
             {
                 CurrentMutationType = "Struggling";
+            }
+        }
+        private void ProcessPendingMovements()
+        {
+            if (PendingMovements.IsEmpty)
+                return;
+
+            // 1. 收集所有輸入向量
+            List<Vector2> allMovements = new List<Vector2>();
+            while (PendingMovements.TryDequeue(out var input))
+            {
+                allMovements.Add(input);
+            }
+
+            if (!allMovements.Any())
+                return;
+
+            // 2. 計算平均向量
+            double totalDX = allMovements.Sum(v => v.DX);
+            double totalDY = allMovements.Sum(v => v.DY);
+            int inputCount = allMovements.Count;
+
+            // 3. 縮放平均向量（確保移動不過快）
+            // 這裡我們將平均貢獻除以輸入數量，並根據 deltaTime 縮放。
+            double averageDX = (totalDX / inputCount) * 0.1; // 0.1 是縮放係數
+            double averageDY = (totalDY / inputCount) * 0.1;
+
+            // 4. 更新細胞位置 (需要鎖定)
+            lock (_stateLock)
+            {
+                X += averageDX;
+                Y += averageDY;
+
+                // 邊界檢查 (防止細胞移出畫布)
+                X = Math.Max(Size, Math.Min(800 - Size, X)); // 假設畫布寬度 800
+                Y = Math.Max(Size, Math.Min(600 - Size, Y)); // 假設畫布高度 600
             }
         }
     }
