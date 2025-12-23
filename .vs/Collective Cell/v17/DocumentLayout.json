@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Collective Cell\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|d:\\collective cell\\collective cell\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02D12227-9A2A-41CB-9D1D-C7FE8F72388B}|Collective Cell\\Collective Cell.csproj|solutionrelative:collective cell\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "D:\\Collective Cell\\Collective Cell\\Models\\Cell.cs",
+              "RelativeDocumentMoniker": "Collective Cell\\Models\\Cell.cs",
+              "ToolTip": "D:\\Collective Cell\\Collective Cell\\Models\\Cell.cs",
+              "RelativeToolTip": "Collective Cell\\Models\\Cell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T01:17:24.752Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

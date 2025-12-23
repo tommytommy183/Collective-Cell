@@ -1,0 +1,75 @@
+# ----------------------------------------------------------------------
+# ASP.NET Core & C# Project Ignore List for SignalR Game
+# ----------------------------------------------------------------------
+
+# 1. 專案產物 (Build & Output)
+# ----------------------------------------------------------------------
+## 二進制文件和目標文件夾
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+*.pdb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 2. IDE 和編輯器設定 (IDE/Editor Files)
+# ----------------------------------------------------------------------
+## Visual Studio
+.vs/                   # Visual Studio 隱藏文件夾
+*.[Cc]odeAnalysis/
+*.[Dd]iagnostics/
+[Tt]empPE/
+!*.exe.config          # 保留 exe.config (如果有)
+!*.exe.manifest        # 保留 exe.manifest (如果有)
+
+## JetBrains Rider/ReSharper
+.idea/                 # JetBrains IDE 設定
+*.iml
+
+## Visual Studio Code
+.vscode/
+
+# 3. ASP.NET Core 相關
+# ----------------------------------------------------------------------
+## 部署/發布相關
+Publish/
+*.publishproj
+
+## wwwroot 內的特定檔案 (如果使用 TypeScript 或 Sass)
+#*.css.map
+#*.js.map
+
+# 4. 套件與依賴管理 (Packages & Dependencies)
+# ----------------------------------------------------------------------
+# NuGet 相關
+[Pp]ackages/
+# 專案根目錄的 'packages' 資料夾
+**/[Pp]ackages/*
+# 如果您使用 node.js (例如 Webpack/Vue/React 前端)
+/node_modules/
+
+# 5. 測試與日誌 (Testing & Logs)
+# ----------------------------------------------------------------------
+TestResults/
+*.log
+*.rpt
+[Tt]humbs.db
+
+# 6. 敏感文件 (Sensitive Files)
+# ----------------------------------------------------------------------
+## 如果您的專案使用了 appsettings.Development.json 以外的敏感設定檔
+appsettings.Development.json
+appsettings.Staging.json
+appsettings.Production.json
+# 推薦做法是只忽略包含密鑰的檔案，例如：
+# appsettings.*.json
+!appsettings.json
+!appsettings.Development.json # 但在 .NET Core 中通常會保留此檔案
+
+# 7. 忽略作業系統產生檔案
+# ----------------------------------------------------------------------
+.DS_Store
+.localized
